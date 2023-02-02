@@ -1,0 +1,141 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="C:\Users\User\Desktop\icons\fontawesome-free-5.9.0-web\css\all.css">
+    <script src = "https://use.fontawesome.com/d1341f9b7a.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        *{
+box-sizing:border-box;
+}
+          ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  //overflow: hidden;
+  background-color: darkolivegreen;
+              position:absolute;
+              top: 70%;
+        width: 100%;
+}
+    li {
+  float: left;
+}
+           li a{
+  display:inline-table;
+  color: black;
+  text-align: center;
+  padding: 31px 25px;
+  text-decoration: none;
+  font-size: 25px;
+    }
+        
+         li a:hover{
+  background-color: red;
+    }
+   
+        .mySlides {display:none;}
+        
+        .content {
+  position: absolute;
+  top: 90px;
+  left: 596px;
+  text-align:center;
+  color:white;
+  font-size:95px;
+  //background-color:black;
+  opacity:1.5;
+}
+        .icons{
+            position: absolute;
+            top:10%;
+            left:10%;
+            font-size: 35px;
+            color: white;
+            text-decoration: none;
+        }
+        .icon:hover{
+            transform: scale(1.2);
+        }
+        .icon{
+            text-decoration: none;
+            color: white;
+        }
+        .para{
+padding:84px 224px;;
+font-size:20;
+white-space:0.5;
+            text-align: justify;}
+
+        .call > a{
+            position: absolute;
+            right:10%;
+            font-size: 45px;
+            color:white;
+            top: 10%;
+            text-decoration: none;
+        }
+        .slides{
+            width: 100%;
+            padding: 0 0;
+            margin: 0;
+            
+        }
+    </style>
+</head>
+<body>
+ <div>           
+
+<div class="slides" style="position: absolute;">
+  <img class="mySlides" src="pic6.jpg" style="width:100%;height:800px;">
+  <img class="mySlides" src="pic5.jpg" style="width:100%;height:800px;">
+  <img class="mySlides" src="pic7.jpg" style="width:100%;height:800px;">
+</div>
+<form>
+            <a href"reserve.html" target="self"><input type="submit" Value="Go"></a>
+         </form>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  <!--   <div class="content"><p>The<br>Cafe</p></div>
+    </div> -->
+          
+     <div class="call">
+         <a href="#" class="fa fa-phone icon">&nbsp;&nbsp;+123456789</a>
+     </div>
+    
+     <ul>
+        <li><img src="the%20cafe.png" style="width:50%;margin-left:10%;"></li>
+    <li><a href="#home" style="background-color: red;">Home</a></li>
+    <li><a href="about.html">About</a></li>
+   <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact1.html">Contact Us</a></li>
+     <!--   <div class="drpdwn-content" style="position:fixed;">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        </div> -->
+        
+    </ul>
+         
+    </div>
+
+    
+</body>
+</html>
